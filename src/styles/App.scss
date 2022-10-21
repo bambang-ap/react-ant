@@ -36,6 +36,33 @@ body {
 	}
 }
 
+.industry {
+	overflow: hidden;
+	position: relative;
+	background: $BLACK60;
+	border: {
+		top-left-radius: 2rem;
+		bottom-right-radius: 2rem;
+	}
+	.description {
+		@include display-column();
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		position: absolute;
+		transform: translateX(-50%) translateY(-50%);
+		span {
+			text: {
+				align: center;
+				transform: uppercase;
+			}
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
+
 .product {
 	@include box-shadow();
 	@include display-column();

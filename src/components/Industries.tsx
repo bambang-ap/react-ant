@@ -3,6 +3,7 @@ import React from 'react';
 import {Button, Col, Row} from 'antd';
 
 import {Industry} from '@components';
+import {GUTTER} from '@constants';
 
 export const Industries = () => (
 	<div>
@@ -12,7 +13,7 @@ export const Industries = () => (
 				<Button type="link">See all</Button>
 			</Col>
 		</Row>
-		<Row>
+		<Row gutter={GUTTER}>
 			<Col span={8}>
 				<Industry />
 			</Col>
