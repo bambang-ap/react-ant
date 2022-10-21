@@ -1,0 +1,59 @@
+@import 'colors', 'mixins';
+
+body {
+	background: $BLACK15;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.header-part {
+	&.ant-row {
+		align-items: center;
+	}
+}
+
+.features-part {
+	img {
+		background: $WHITE;
+		border-radius: 10rem;
+		padding: 0.25rem;
+		@include box-shadow();
+	}
+
+	.ant-col {
+		text-align: center;
+	}
+}
+
+.section-title {
+	@include display-row();
+	align-items: center;
+
+	.ant-col:last-child {
+		text-align: right;
+	}
+}
+
+.product {
+	@include box-shadow();
+	@include display-column();
+	position: relative;
+	padding: 1.5rem 1rem;
+	align-items: center;
+
+	border: {
+		style: solid;
+		radius: 0.5rem;
+		width: 0.01rem;
+		color: $BLACK60;
+	}
+
+	.rating {
+		top: 0.5rem;
+		z-index: 1;
+		right: 0.5rem;
+		position: absolute;
+	}
+}

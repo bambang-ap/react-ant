@@ -37,7 +37,8 @@ module.exports = {
 		'@typescript-eslint/indent': 0,
 		'import/no-extraneous-dependencies': 0,
 		'import/prefer-default-export': 0,
-		'react/jsx-curly-newline': 0,
+		// 'import/newline-after-import': 1,
+		'react/jsx-curly-newline': 1,
 		'react/jsx-closing-bracket-location': 0,
 		'@typescript-eslint/no-use-before-define': 0,
 		'react/jsx-props-no-spreading': [
@@ -99,7 +100,7 @@ module.exports = {
 		'no-unreachable': 1,
 		'no-console': [1, {allow: ['info']}],
 		'import-helpers/order-imports': [
-			'warn',
+			1,
 			{
 				newlinesBetween: 'always',
 				groups: [

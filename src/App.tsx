@@ -1,8 +1,18 @@
-import './App.less';
+import './styles/App.scss';
 
 import React from 'react';
 
-import {Banner, Features, Header, Industries, MostWanted} from '@components';
+import {
+	Banner,
+	Features,
+	Header,
+	Industries,
+	MostWanted,
+	NewProducts,
+	BusinessPackages,
+	CreditProducts,
+	AllProducts,
+} from '@components';
 
 function App() {
 	return (
@@ -12,6 +22,10 @@ function App() {
 			<Features />
 			<MostWanted />
 			<Industries />
+			<NewProducts />
+			<BusinessPackages />
+			<CreditProducts />
+			<AllProducts />
 		</>
 	);
 }

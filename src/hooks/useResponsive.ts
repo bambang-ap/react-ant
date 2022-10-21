@@ -15,5 +15,18 @@ export const useResponsive = () => {
 	const isSm = type === 'sm';
 	const isXs = type === 'xs';
 
-	return {isXxl, isXl, isLg, isMd, isSm, isXs};
+	return {
+		isXxl,
+		isXl,
+		isLg,
+		isMd,
+		isSm,
+		isXs,
+		minWidthXxl: 1200,
+		minWidthXl: 980,
+		minWidthLg: 750,
+		minWidthMd: 550,
+		minWidthSm: 240,
+		minWidthXs: 160,
+	};
 };

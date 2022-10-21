@@ -8,6 +8,7 @@ import {
 } from '@ant-design/icons';
 import {Badge, Col, Image, Input, Row} from 'antd';
 
+import {GUTTER} from '@constants';
 import {useResponsive} from '@hooks';
 
 export const Header = () => {
@@ -16,12 +17,12 @@ export const Header = () => {
 	if (!isXs) return null;
 
 	return (
-		<Row className="header" gutter={[8, 8]}>
+		<Row className="header-part" gutter={GUTTER}>
 			<Col span={2}>
 				<MenuOutlined />
 			</Col>
 			<Col span={2}>
-				<Image src="https://via.placeholder.com/350x150" />
+				<Image preview={false} src="https://via.placeholder.com/350x150" />
 			</Col>
 			<Col span={16}>
 				<Input prefix={<SearchOutlined />} />
